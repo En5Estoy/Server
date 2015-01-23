@@ -4,6 +4,16 @@
 
 Slack: https://en5estoy.slack.com  
 
+## Datos ##
+- Acceso al administrador  
+URL: http://en5estoy.com/admin
+
+- Acceso al editor visual
+URL: http://en5estoy.com/app/routes/editor
+
+## Estructura de los datos ##
+** TODO **
+
 ## En 5 Estos: WebServices ##
 __v0.1: Pre-Alpha__
 - Wrappers: Red Bus
