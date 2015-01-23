@@ -1,0 +1,27 @@
+{
+  "name": "en5estoy",
+  "version": "3.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3",
+    "less-middleware": "*",
+    "cheerio" : "*",
+    "request" : "*",
+    "formage" : "2.5.7",
+    "mongoose" : "*",
+    "underscore" : "*",
+    "swig" : "*",
+    "moment" : "*",
+    "cron" : "*",
+    "node-gcm" : "*",
+    "q" : "*",
+    "string" : "*",
+    "node-foursquare" : "*",
+    "proj4": "*",
+    "parse-rss" : "*",
+    "socket.io" : "*"
+  }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Editor de Rutas</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+
+    <!-- include the core styles -->
+    <link rel="stylesheet" href="/stylesheets/alertify.core.css" />
+    <!-- include a theme, can be included into the core instead of 2 separate files -->
+    <link rel="stylesheet" href="/stylesheets/alertify.default.css" />
+
+    <style>
+      body {
+        padding-top: 70px;
+      }
+
+      .leaflet-div-icon {
+  background: transparent;
+  border: none;
+}
+ 
+.leaflet-marker-icon .number{
+  position: relative;
+  top: -37px;
+  font-size: 12px;
+  width: 25px;
+  text-align: center;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">En 5 Estoy</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Editor de Rutas</a></li>
+            <li><a href="/admin">Volver al panel</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </div><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+          <div id="map" style="width: 100%; height: 600px;"></div>
+        </div><!--/span-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          <!--<div class="panel panel-warning">
+            <div class="panel-heading">Importante</div>
+            <div class="panel-body">
+              Es importante agregar puntos intermedios cada 2 cuadras. Estos puntos servirán de referencia para el cálculo de rutas. Se estima que debe haber al menos 1 parada cada 2 cuadras. Esta técnica también permite mejorar la trazabilidad del recorrido.
+            </div>
+          </div>-->
+          <form role="form" style="margin-bottom: 15px;">
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="order_stops">Ordenar Auto</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="order_man_stops">Ordenar Manual</button>
+            <hr/>
+            <div class="form-group">
+              <label>Transporte</label>
+              <select id="transport" class="form-control">
+                <option value="">Seleccione...</option>
+                {% for tp in transport %}
+                <option value="{{ tp.id }}">{{ tp.name }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Línea</label>
+              <select id="lines" class="form-control">
+                <option value="">Seleccione...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Sentido</label>
+              <select id="way" class="form-control">
+                <option value="">Seleccione...</option>
+                <option value="going">Ida</option>
+                <option value="return">Vuelta</option>
+                <option value="no_way">Sin sentido</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="load_way">Cargar Sentido</button>
+            <hr/>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="save_stops">Guardar</button>
+          </form>
+          <div class="list-group" id="locations">
+            
+          </div>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; En 5 Estoy by Speryans</p>
+      </footer>
+
+    </div><!--/.container-->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <script src="http://underscorejs.org/underscore-min.js"></script>
+
+    <script src="/javascripts/string.min.js"></script>
+
+    <script src="/javascripts/alertify.min.js"></script>
+
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+    <!--<script src="http://beta.mapquestapi.com/sdk/leaflet/v0.1/mq-map.js?key=Fmjtd%7Cluub2l0y2h%2Caw%3Do5-96ywda"></script>
+    <script src="http://beta.mapquestapi.com/sdk/leaflet/v0.1/mq-routing.js?key=Fmjtd%7Cluub2l0y2h%2Caw%3Do5-96ywda"></script>-->
+
+    <script src="/javascripts/pubsub.js"></script>
+
+    <script src="/javascripts/editor.js"></script>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>En 5 Estoy</title><link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"><link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.min.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700|Inconsolata|Raleway:200"><style>/* Highlight.js Theme */
+.tomorrow-comment,pre .comment,pre .title{color:#8e908c}.tomorrow-red,pre .attribute,pre .css .class,pre .css .id,pre .css .pseudo,pre .html .doctype,pre .regexp,pre .ruby .constant,pre .tag,pre .variable,pre .xml .doctype,pre .xml .pi,pre .xml .tag .title{color:#c82829}.tomorrow-orange,pre .built_in,pre .constant,pre .literal,pre .number,pre .params,pre .preprocessor{color:#f5871f}.tomorrow-yellow,pre .class,pre .css .rules .attribute,pre .ruby .class .title{color:#eab700}.tomorrow-green,pre .header,pre .inheritance,pre .ruby .symbol,pre .string,pre .value,pre .xml .cdata{color:#718c00}.tomorrow-aqua,pre .css .hexcolor{color:#3e999f}.tomorrow-blue,pre .coffeescript .title,pre .function,pre .javascript .title,pre .perl .sub,pre .python .decorator,pre .python .title,pre .ruby .function .title,pre .ruby .title .keyword{color:#4271ae}.tomorrow-purple,pre .javascript .function,pre .keyword{color:#8959a8}pre code{display:block;background:#fff;color:#4d4d4c;font-family:Menlo,Monaco,Consolas,monospace;line-height:1.5;border:1px solid #ccc;padding:10px}</style><style type="text/css">body,
+h4,
+h5 {
+  font-family: 'Roboto' sans-serif !important;
+}
+h1,
+h2,
+h3,
+.aglio {
+  font-family: 'Raleway' sans-serif !important;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+  display: none;
+}
+h1:hover a,
+h2:hover a,
+h3:hover a,
+h4:hover a,
+h5:hover a {
+  display: inline;
+}
+code {
+  color: #444;
+  background-color: #ddd;
+  font-family: 'Inconsolata' monospace !important;
+}
+a[data-target] {
+  cursor: pointer;
+}
+h4 {
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.back-to-top {
+  position: fixed;
+  z-index: 1;
+  bottom: 0px;
+  right: 24px;
+  padding: 4px 8px;
+  background-color: #eee;
+  text-decoration: none !important;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-left: 1px solid rgba(0,0,0,0.1);
+  border-right: 1px solid rgba(0,0,0,0.1);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel {
+  overflow: hidden;
+}
+.panel-heading code {
+  color: #c7254e;
+  background-color: transparent;
+}
+.panel-heading h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+a.list-group-item {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+a.list-group-item.heading {
+  background-color: #f5f5f5;
+}
+.list-group-item.collapse {
+  display: none;
+}
+</style></head><body><a href="#top" class="text-muted back-to-top"><i class="fa fa-toggle-up"></i>&nbsp;Back to top</a><div class="container"><div class="row"><nav id="nav" style="margin-top: 38px;" class="col-md-3 collapse hidden-sm hidden-xs"><div class="list-group"><a href="#" class="list-group-item heading">Home</a></div><div class="list-group"><a href="#page:weather" class="list-group-item heading">Weather</a><a href="#page:weather,header:weather-weather" class="list-group-item"><i class="fa fa-plus-square"></i>&nbsp;Weather</a></div><div class="list-group"><a href="#page:news---notifications" class="list-group-item heading">News - Notifications</a><a href="#page:news---notifications,header:news---notifications-news" class="list-group-item"><i class="fa fa-plus-square"></i>&nbsp;News</a><a href="#page:news---notifications,header:news---notifications-notifications" class="list-group-item"><i class="fa fa-plus-square"></i>&nbsp;Notifications</a></div><div class="list-group"><a href="#page:cities" class="list-group-item heading">Cities</a><a href="#page:cities,header:cities-cities" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Cities</a></div><div class="list-group"><a href="#page:commerces" class="list-group-item heading">Commerces</a><a href="#page:commerces,header:commerces-categories" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Categories</a><a href="#page:commerces,header:commerces-search" class="list-group-item"><i class="fa fa-plus-square"></i>&nbsp;Search</a><a href="#page:commerces,header:commerces-recommendations" class="list-group-item"><i class="fa fa-plus-square"></i>&nbsp;Recommendations</a></div><div class="list-group"><a href="#page:red-bus" class="list-group-item heading">Red Bus</a><a href="#page:red-bus,header:red-bus-session" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Session</a><a href="#page:red-bus,header:red-bus-captcha" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Captcha</a><a href="#page:red-bus,header:red-bus-send" class="list-group-item"><i class="fa fa-plus-square"></i>&nbsp;Send</a></div><div class="list-group"><a href="#page:taxi" class="list-group-item heading">Taxi</a><a href="#page:taxi,header:taxi-taxi" class="list-group-item"><i class="fa fa-plus-square"></i>&nbsp;Taxi</a></div><div class="list-group"><a href="#page:user" class="list-group-item heading">User</a><a href="#page:user,header:user-user" class="list-group-item"><i class="fa fa-plus-square"></i>&nbsp;User</a></div><p style="text-align: center"><a href="http://www.en5estoy.com">http://www.en5estoy.com</a></p></nav><div class="col-md-9"><div data-bind="visible: page() == 'home'"><header><div class="page-header"><h1 id="top">En 5 Estoy</h1></div></header><div class="description"><p>Esta API describe todos los endpoints para acceder a los servicios de <em>En 5 Estoy</em>.</p>
+<p>Descripción de la API V1</p>
+</div><a href="#page:weather" class="btn btn-default pull-right">Next&nbsp;<i class="fa fa-arrow-circle-right"></i></a><div class="clearfix"></div><hr></div><div data-bind="visible: page() == 'weather', style: {marginTop: page() == 'weather' ? '38px' : ''}"><div class="panel panel-default"><div class="panel-heading"><h3 id="weather">Weather&nbsp;<a href="#page:weather"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><p>Devuelve el Clima</p>
+<h4 id="weather-weather">Weather&nbsp;<a href="#page:weather,header:weather-weather"><i class="fa fa-link"></i></a></h4><section id="weather-weather-post" class="panel panel-success"><div class="panel-heading"><span style="text-transform: lowercase" class="pull-right">Data Depending the User</span><a href="#page:weather,header:weather-weather-post" class="btn btn-xs btn-success">POST</a>&nbsp;<code>/v1/weather</code></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>UDID</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#460713" class="pull-right">Toggle</a></li><li id="460713" class="list-group-item collapse"><h5>Headers</h5><pre><code><span class="attribute">Content-Type</span>: <span class="string">application/json</span><br></code></pre><h5>Body</h5><pre><code>{
+    "<span class="attribute">result</span>": <span class="value"><span class="literal">true</span></span>,
+    "<span class="attribute">data</span>": <span class="value">[
+        {
+            "<span class="attribute">url</span>": <span class="value"><span class="string">"http://www.diaadia.com.ar/deportes/sabella-estuvo-casa"</span></span>,
+            "<span class="attribute">title</span>": <span class="value"><span class="string">"Sabella estuvo en casa"</span>
+        </span>}
+    ]
+</span>}
+</code></pre></li></ul></section></div></div><a href="#page:news---notifications" class="btn btn-default pull-right">Next&nbsp;<i class="fa fa-arrow-circle-right"></i></a><a href="#" class="btn btn-default"><i class="fa fa-arrow-circle-left"></i> Previous</a><div class="clearfix"></div><hr></div><div data-bind="visible: page() == 'news---notifications', style: {marginTop: page() == 'news---notifications' ? '38px' : ''}"><div class="panel panel-default"><div class="panel-heading"><h3 id="news---notifications">News - Notifications&nbsp;<a href="#page:news---notifications"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><p>Devuelve las noticias</p>
+<h4 id="news---notifications-news">News&nbsp;<a href="#page:news---notifications,header:news---notifications-news"><i class="fa fa-link"></i></a></h4><section id="news---notifications-news-post" class="panel panel-success"><div class="panel-heading"><span style="text-transform: lowercase" class="pull-right">Data Depending the User</span><a href="#page:news---notifications,header:news---notifications-news-post" class="btn btn-xs btn-success">POST</a>&nbsp;<code>/api/v1/news</code></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>UDID</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#726305" class="pull-right">Toggle</a></li><li id="726305" class="list-group-item collapse"><h5>Headers</h5><pre><code><span class="attribute">Content-Type</span>: <span class="string">application/json</span><br></code></pre><h5>Body</h5><pre><code>{
+    "<span class="attribute">result</span>": <span class="value"><span class="literal">true</span></span>,
+    "<span class="attribute">data</span>": <span class="value">[
+        {
+            "<span class="attribute">url</span>": <span class="value"><span class="string">"http://www.diaadia.com.ar/deportes/sabella-estuvo-casa"</span></span>,
+            "<span class="attribute">title</span>": <span class="value"><span class="string">"Sabella estuvo en casa"</span>
+        </span>}
+    ]
+</span>}
+</code></pre></li></ul></section><h4 id="news---notifications-notifications">Notifications&nbsp;<a href="#page:news---notifications,header:news---notifications-notifications"><i class="fa fa-link"></i></a></h4><section id="news---notifications-notifications-post" class="panel panel-success"><div class="panel-heading"><span style="text-transform: lowercase" class="pull-right">Data Depending the User</span><a href="#page:news---notifications,header:news---notifications-notifications-post" class="btn btn-xs btn-success">POST</a>&nbsp;<code>/api/v1/notifications</code></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>UDID</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#528543" class="pull-right">Toggle</a></li><li id="528543" class="list-group-item collapse"><h5>Headers</h5><pre><code><span class="attribute">Content-Type</span>: <span class="string">application/json</span><br></code></pre><h5>Body</h5><pre><code>{
+    "<span class="attribute">result</span>": <span class="value"><span class="literal">true</span></span>,
+    "<span class="attribute">data</span>": <span class="value">[
+        {}
+    ]
+</span>}
+</code></pre></li></ul></section></div></div><a href="#page:cities" class="btn btn-default pull-right">Next&nbsp;<i class="fa fa-arrow-circle-right"></i></a><a href="#page:weather" class="btn btn-default"><i class="fa fa-arrow-circle-left"></i> Previous</a><div class="clearfix"></div><hr></div><div data-bind="visible: page() == 'cities', style: {marginTop: page() == 'cities' ? '38px' : ''}"><div class="panel panel-default"><div class="panel-heading"><h3 id="cities">Cities&nbsp;<a href="#page:cities"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><p>Devuelve las Ciudades Disponibles en el Sistema</p>
+<h4 id="cities-cities">Cities&nbsp;<a href="#page:cities,header:cities-cities"><i class="fa fa-link"></i></a></h4><section id="cities-cities-get" class="panel panel-info"><div class="panel-heading"><span style="text-transform: lowercase" class="pull-right">Data</span><a href="#page:cities,header:cities-cities-get" class="btn btn-xs btn-primary">GET</a>&nbsp;<code>/v1/cities</code></div><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#394013" class="pull-right">Toggle</a></li><li id="394013" class="list-group-item collapse"><h5>Headers</h5><pre><code><span class="attribute">Content-Type</span>: <span class="string">application/json</span><br></code></pre><h5>Body</h5><pre><code>{
+    "<span class="attribute">result</span>": <span class="value"><span class="literal">true</span></span>,
+    "<span class="attribute">data</span>": <span class="value">[
+        {
+            "<span class="attribute">state</span>": <span class="value">{
+                "<span class="attribute">name</span>": <span class="value"><span class="string">"Cordoba"</span></span>,
+                "<span class="attribute">_id</span>": <span class="value"><span class="string">"52cd51bc35ba9f0000a73c86"</span>
+            </span>}</span>,
+            "<span class="attribute">name</span>": <span class="value"><span class="string">"Cordoba"</span></span>,
+            "<span class="attribute">_id</span>": <span class="value"><span class="string">"52cd51c335ba9f0000a73c8a"</span></span>,
+            "<span class="attribute">features</span>": <span class="value">[]
+        </span>},
+    ]
+</span>}
+</code></pre></li></ul></section></div></div><a href="#page:commerces" class="btn btn-default pull-right">Next&nbsp;<i class="fa fa-arrow-circle-right"></i></a><a href="#page:news---notifications" class="btn btn-default"><i class="fa fa-arrow-circle-left"></i> Previous</a><div class="clearfix"></div><hr></div><div data-bind="visible: page() == 'commerces', style: {marginTop: page() == 'commerces' ? '38px' : ''}"><div class="panel panel-default"><div class="panel-heading"><h3 id="commerces">Commerces&nbsp;<a href="#page:commerces"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><p>Servicio de consulta de Comercios</p>
+<h4 id="commerces-categories">Categories&nbsp;<a href="#page:commerces,header:commerces-categories"><i class="fa fa-link"></i></a></h4><p>Responde desde el API de Foursquare</p>
+<section id="commerces-categories-get" class="panel panel-info"><div class="panel-heading"><span style="text-transform: lowercase" class="pull-right">Data</span><a href="#page:commerces,header:commerces-categories-get" class="btn btn-xs btn-primary">GET</a>&nbsp;<code>/v1/commerce/categories</code></div><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#59571" class="pull-right">Toggle</a></li><li id="59571" class="list-group-item collapse"><h5>Headers</h5><pre><code><span class="attribute">Content-Type</span>: <span class="string">application/json</span><br></code></pre><h5>Body</h5><pre><code>[
+    {<span class="keyword">...</span>}
+]
+</code></pre></li></ul></section><h4 id="commerces-search">Search&nbsp;<a href="#page:commerces,header:commerces-search"><i class="fa fa-link"></i></a></h4><section id="commerces-search-post" class="panel panel-success"><div class="panel-heading"><span style="text-transform: lowercase" class="pull-right">Data</span><a href="#page:commerces,header:commerces-search-post" class="btn btn-xs btn-success">POST</a>&nbsp;<code>/api/v1/commerce/search</code></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>search</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;</dd><dt>category</dt><dd><code></code>&nbsp;<span>(optional)</span>&nbsp;</dd><dt>lat</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;</dd><dt>lon</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#871438" class="pull-right">Toggle</a></li><li id="871438" class="list-group-item collapse"><h5>Headers</h5><pre><code><span class="attribute">Content-Type</span>: <span class="string">application/json</span><br></code></pre><h5>Body</h5><pre><code>[
+    {<span class="keyword">...</span>}
+]
+</code></pre></li></ul></section><h4 id="commerces-recommendations">Recommendations&nbsp;<a href="#page:commerces,header:commerces-recommendations"><i class="fa fa-link"></i></a></h4><p>Recomendaciones de Comercios basadas en el usuario actual</p>
+<section id="commerces-recommendations-post" class="panel panel-success"><div class="panel-heading"><span style="text-transform: lowercase" class="pull-right">Data</span><a href="#page:commerces,header:commerces-recommendations-post" class="btn btn-xs btn-success">POST</a>&nbsp;<code>/api/v1/commerce/recommendations</code></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>UDID</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#478616" class="pull-right">Toggle</a></li><li id="478616" class="list-group-item collapse"><h5>Headers</h5><pre><code><span class="attribute">Content-Type</span>: <span class="string">application/json</span><br></code></pre><h5>Body</h5><pre><code>[
+    {<span class="keyword">...</span>}
+]
+</code></pre></li></ul></section></div></div><a href="#page:red-bus" class="btn btn-default pull-right">Next&nbsp;<i class="fa fa-arrow-circle-right"></i></a><a href="#page:cities" class="btn btn-default"><i class="fa fa-arrow-circle-left"></i> Previous</a><div class="clearfix"></div><hr></div><div data-bind="visible: page() == 'red-bus', style: {marginTop: page() == 'red-bus' ? '38px' : ''}"><div class="panel panel-default"><div class="panel-heading"><h3 id="red-bus">Red Bus&nbsp;<a href="#page:red-bus"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><p>Sección especial para Red Bus con actualización de API y mejora de Velocidad.</p>
+<h4 id="red-bus-session">Session&nbsp;<a href="#page:red-bus,header:red-bus-session"><i class="fa fa-link"></i></a></h4><p>Crea y Devuelve la sesión para iniciar la consulta.</p>
+<section id="red-bus-session-get" class="panel panel-info"><div class="panel-heading"><span style="text-transform: lowercase" class="pull-right">Data</span><a href="#page:red-bus,header:red-bus-session-get" class="btn btn-xs btn-primary">GET</a>&nbsp;<code>/v1/redbus/session</code></div><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#884904" class="pull-right">Toggle</a></li><li id="884904" class="list-group-item collapse"><h5>Headers</h5><pre><code><span class="attribute">Content-Type</span>: <span class="string">application/json</span><br></code></pre><h5>Body</h5><pre><code>{
+    "<span class="attribute">result</span>": <span class="value"><span class="literal">true</span></span>,
+    "<span class="attribute">cookie</span>": <span class="value"><span class="string">"phj2arkf7855vrmloruj8vjhr3"</span>
+</span>}
+</code></pre></li></ul></section><h4 id="red-bus-captcha">Captcha&nbsp;<a href="#page:red-bus,header:red-bus-captcha"><i class="fa fa-link"></i></a></h4><p>Obtiene el Captcha basado en la sesión creada</p>
+<section id="red-bus-captcha-get" class="panel panel-info"><div class="panel-heading"><span style="text-transform: lowercase" class="pull-right">Data</span><a href="#page:red-bus,header:red-bus-captcha-get" class="btn btn-xs btn-primary">GET</a>&nbsp;<code>/v1/redbus/captcha/{session}</code></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>session</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#448362" class="pull-right">Toggle</a></li><li id="448362" class="list-group-item collapse"><h5>Headers</h5><pre><code><span class="attribute">Content-Type</span>: <span class="string">image/jpeg</span><br></code></pre></li></ul></section><h4 id="red-bus-send">Send&nbsp;<a href="#page:red-bus,header:red-bus-send"><i class="fa fa-link"></i></a></h4><p>Obtiene el saldo de la tarjeta</p>
+<section id="red-bus-send-post" class="panel panel-success"><div class="panel-heading"><span style="text-transform: lowercase" class="pull-right">Data</span><a href="#page:red-bus,header:red-bus-send-post" class="btn btn-xs btn-success">POST</a>&nbsp;<code>/api/v1/redbus/send</code></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>dni</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;</dd><dt>card</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;</dd><dt>captcha</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;</dd><dt>cookie</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID de Sesión</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#538570" class="pull-right">Toggle</a></li><li id="538570" class="list-group-item collapse"><h5>Headers</h5><pre><code><span class="attribute">Content-Type</span>: <span class="string">application/json</span><br></code></pre><h5>Body</h5><pre><code>{
+    <span class="keyword">...</span>
+}
+</code></pre></li></ul></section></div></div><a href="#page:taxi" class="btn btn-default pull-right">Next&nbsp;<i class="fa fa-arrow-circle-right"></i></a><a href="#page:commerces" class="btn btn-default"><i class="fa fa-arrow-circle-left"></i> Previous</a><div class="clearfix"></div><hr></div><div data-bind="visible: page() == 'taxi', style: {marginTop: page() == 'taxi' ? '38px' : ''}"><div class="panel panel-default"><div class="panel-heading"><h3 id="taxi">Taxi&nbsp;<a href="#page:taxi"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><p>Devuelve el valor del viaje en Taxi dependiendo la ciudad del usuario. Calcula múltiples tarifas si es necesario.</p>
+<h4 id="taxi-taxi">Taxi&nbsp;<a href="#page:taxi,header:taxi-taxi"><i class="fa fa-link"></i></a></h4><p>Obtiene el valor del viaje y si es necesario los múltiples valores por segmentación.</p>
+<section id="taxi-taxi-post" class="panel panel-success"><div class="panel-heading"><span style="text-transform: lowercase" class="pull-right">Data</span><a href="#page:taxi,header:taxi-taxi-post" class="btn btn-xs btn-success">POST</a>&nbsp;<code>/api/v1/taxi</code></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>UDID</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;</dd><dt>address_from</dt><dd><code></code>&nbsp;<span>(optional)</span>&nbsp;</dd><dt>address_to</dt><dd><code></code>&nbsp;<span>(optional)</span>&nbsp;</dd><dt>gps_from</dt><dd><code></code>&nbsp;<span>(optional)</span>&nbsp;</dd><dt>gps_to</dt><dd><code></code>&nbsp;<span>(optional)</span>&nbsp;</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#782649" class="pull-right">Toggle</a></li><li id="782649" class="list-group-item collapse"><h5>Headers</h5><pre><code><span class="attribute">Content-Type</span>: <span class="string">application/json</span><br></code></pre><h5>Body</h5><pre><code>[
+    {<span class="keyword">...</span>}
+]
+</code></pre></li></ul></section></div></div><a href="#page:user" class="btn btn-default pull-right">Next&nbsp;<i class="fa fa-arrow-circle-right"></i></a><a href="#page:red-bus" class="btn btn-default"><i class="fa fa-arrow-circle-left"></i> Previous</a><div class="clearfix"></div><hr></div><div data-bind="visible: page() == 'user', style: {marginTop: page() == 'user' ? '38px' : ''}"><div class="panel panel-default"><div class="panel-heading"><h3 id="user">User&nbsp;<a href="#page:user"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><p>Crea o actualiza los usuarios en el sistema. Los usuarios son parte fundamental del servicio ya que con ellos se manejan los diferentes endpoints y las características disponibles</p>
+<h4 id="user-user">User&nbsp;<a href="#page:user,header:user-user"><i class="fa fa-link"></i></a></h4><p>Registra o Acualiza un usuario</p>
+<section id="user-user-post" class="panel panel-success"><div class="panel-heading"><span style="text-transform: lowercase" class="pull-right">Data</span><a href="#page:user,header:user-user-post" class="btn btn-xs btn-success">POST</a>&nbsp;<code>/api/v1/user/register</code></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>city</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>Palabra Clave que referencie a la Ciudad</p>
+</dd><dt>os</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;<p>Sistema Operativo</p>
+</dd><dt>UDID</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID Único de Dispotivo</p>
+</dd><dt>pid</dt><dd><code></code>&nbsp;<span class="required">(required)</span>&nbsp;<p>Push ID</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#578540" class="pull-right">Toggle</a></li><li id="578540" class="list-group-item collapse"><h5>Headers</h5><pre><code><span class="attribute">Content-Type</span>: <span class="string">application/json</span><br></code></pre><h5>Body</h5><pre><code>{
+    <span class="comment">"result"</span> : <span class="keyword">true</span>,
+    <span class="method">city:</span> {
+        <span class="comment">"_id"</span>: <span class="comment">"52dffdd96bd35ec13c9a67b6"</span>,
+        <span class="comment">"name"</span>: <span class="comment">"Montevideo"</span>,
+        <span class="comment">"state"</span>: {
+            <span class="comment">"name"</span>: <span class="comment">"Montevideo"</span>,
+            <span class="comment">"_id"</span>: <span class="comment">"52dffdb16bd35ec13c9a67b0"</span>
+        },
+        <span class="comment">"features"</span>: [
+            <span class="comment">"transport"</span>,
+            <span class="comment">"taxi"</span>,
+            <span class="comment">"commerce"</span>,
+            <span class="comment">"notifications"</span>,
+            <span class="comment">"weather"</span>
+        ]
+    }
+}
+</code></pre></li></ul></section></div></div><a href="#page:taxi" class="btn btn-default"><i class="fa fa-arrow-circle-left"></i> Previous</a><div class="clearfix"></div><hr></div></div></div></div><p style="text-align: center;" class="text-muted">Generated by <a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a> on 25 Jan 2014</p><div id="localFile" style="display: none; position: absolute; top: 0; left: 0; width: 100%; color: white; background: red; font-size: 150%; text-align: center; padding: 1em;">This page may not display correctly when opened as a local file. Instead, view it from a web server.
+
+</div></body><script src="//code.jquery.com/jquery-1.10.1.min.js"></script><script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script><script type="text/javascript">
+(function() {
+  if (location.protocol === 'file:') {
+    document.getElementById('localFile').style.display = 'block';
+  }
+
+}).call(this);
+</script><script type="text/javascript">
+(function() {
+  $('table').addClass('table');
+
+}).call(this);
+</script><script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/3.0.0/knockout-min.js"></script><script type="text/javascript">
+(function() {
+  var App;
+
+  App = (function() {
+    function App() {
+      this.page = ko.observable('home');
+    }
+
+    return App;
+
+  })();
+
+  window.app = new App();
+
+  window.onhashchange = function() {
+    var parts, v, vars, _i, _len, _ref;
+    vars = {};
+    _ref = location.hash.substr(1).split(',');
+    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+      v = _ref[_i];
+      parts = v.split(':');
+      vars[parts[0]] = parts[1];
+    }
+    window.app.page(vars.page || 'home');
+    if (vars.header) {
+      return $("#" + vars.header)[0].scrollIntoView(true);
+    } else {
+      return window.scrollTo(0, 0);
+    }
+  };
+
+  ko.applyBindings(window.app);
+
+  window.onhashchange();
+
+}).call(this);
+</script></html>
