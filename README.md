@@ -27,9 +27,9 @@ __V1.0: Aion__
 - API: WS y Documentación 
 
 ### To-Dos
-[ ] Precios
-[ ] Incidencias de Transporte
-[ ] Incidencias Generales
+[ ] Precios  
+[ ] Incidencias de Transporte  
+[ ] Incidencias Generales  
 
 ### Versions
 Versión 3.0.2.308
