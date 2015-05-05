@@ -28,7 +28,7 @@ var server = http.createServer(app);
 app.engine('html', swig.renderFile);
 
 // all environments
-app.set('port', 3000);
+app.set('port', 5050);
 
 // API Keys
 app.set('gcm_key', 'AIzaSyAzhe880x2T1DwwAyyztCq4W8k7dtYj-UA');
